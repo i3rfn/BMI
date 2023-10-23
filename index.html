@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="user_input" id="user_input">
+        <img src="./media/1.svg" alt="" />
+        <div>
+          <label>نام خود را وارد کنید :</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="مثال : عرفان"
+            required
+            maxlength="20"
+          />
+          <label>نام خانوادگی خود را وارد کنید :</label>
+          <input
+            type="text"
+            id="lastname"
+            placeholder="مثال : قانع"
+            required
+            maxlength="20"
+          />
+          <label>سال تولد خود را وارد کنید :</label>
+          <input
+            type="text"
+            id="age"
+            placeholder="مثال : 1999"
+            required
+            maxlength="4"
+          />
+          <label>قد خود را وارد کنید :</label>
+          <input
+            type="text"
+            id="height"
+            placeholder="قد به سانتی متر"
+            required
+            maxlength="3"
+          />
+          <label>وزن خود را وارد کنید :</label>
+          <input
+            type="text"
+            id="weight"
+            placeholder="وزن به کیلوگرم"
+            required
+            maxlength="3"
+          />
+          <button id="btn">ثبت</button>
+        </div>
+        <div class="text">
+          محاسبه گر شاخص توده بدنی <br />
+          <img src="./media/2.png" alt="" />
+        </div>
+      </div>
+      <div class="user_result" id="user_result">
+        <img src="./media/3.svg" alt="" />
+        <div id="info"></div>
+        <div class="dis">
+          <div id="moreinfo"></div>
+          <div id="stb"></div>
+        </div>
+        <div class="dis2">
+          <div id="result">
+            <div id="EA"></div>
+            <div id="EV"></div>
+            <div id="CH"></div>
+            <div id="CM"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
